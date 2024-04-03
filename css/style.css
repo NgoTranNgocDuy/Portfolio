@@ -208,6 +208,12 @@ span{
 .portfolio h2{
   margin-bottom: 4rem;
 }
+.portfolio p{
+  color: #000;
+}
+.portfolio h4{
+  color: #000;
+}
 .portfolio-container{
   display: grid;
   grid-template-columns: repeat(3,1fr);
