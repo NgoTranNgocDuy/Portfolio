@@ -31,12 +31,10 @@ window.onscroll = () =>{
   let header = document.querySelector('header');
   header.classList.toggle('sticky',window.scrollY > 100);
   
-  
   // remove toggle icon and navbar when click navbar links (scroll)
   menuIcon.classList.remove('bx-x');
   navbar.classList.remove('active');
 };
-
    // scroll reveal
   ScrollReveal({
     //  reset: true,
@@ -44,13 +42,11 @@ window.onscroll = () =>{
      duration :2000,
      delay :200
     });
-
   ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
   ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
   ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
   ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
- 
- 
+  // ScrollReveal().reveal('.services-content, .portfolio-content', { origin: 'top' });
   // typed js
   const typed = new Typed('.multiple-text',{
     strings : [' from Viet Nam' , ' studying bachelor of Engineering', ' at Monash University'],
