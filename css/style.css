@@ -273,6 +273,53 @@ span{
   font-size: 2rem;
   color: var(--second-bg-color);
 }
+/* Timeline Section */
+.timeline {
+  background: var(--bg-color);
+  padding: 5rem 0;
+}
+.timeline .heading {
+  margin-bottom: 4rem;
+}
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.timeline-item {
+  position: relative;
+  width: 80%;
+  padding: 2rem;
+  background: var(--second-bg-color);
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.timeline-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 2rem var(--main-color);
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: var(--main-color);
+  transform: translateX(-50%);
+}
+.timeline-content {
+  text-align: center;
+}
+.timeline-content h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.timeline-content p {
+  font-size: 1.6rem;
+}
 .contact h2{
   margin-bottom: 3rem;
 }

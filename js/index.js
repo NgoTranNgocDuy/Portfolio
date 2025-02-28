@@ -43,11 +43,18 @@ window.onscroll = () =>{
      delay :200
     });
   ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-  ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
+  ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .timeline-container', { origin: 'bottom' });
   ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
   ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
-  // ScrollReveal().reveal('.services-content, .portfolio-content', { origin: 'top' });
   // typed js
+  ScrollReveal().reveal('.timeline-item:nth-child(odd) .timeline-content', {
+    origin: 'left',
+    delay: 300
+  });
+  ScrollReveal().reveal('.timeline-item:nth-child(even) .timeline-content', {
+    origin: 'right',
+    delay: 300
+  });
   const typed = new Typed('.multiple-text',{
     strings : [' from Viet Nam' , ' studying bachelor of Engineering', ' at Monash University'],
     typeSpeed: 100,
